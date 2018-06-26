@@ -5,6 +5,7 @@ body {
   background-color: black;
   opacity: 0.9;
   text-align: center;
+  margin: 10px;
 }
 
 header {
@@ -14,21 +15,61 @@ header {
   position: fixed;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
 
 .logo {
-  margin: top: 10px;
   height: 50px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 10px;
 }
 
 nav span {
   display: inline-flex;
-  justify-content: space-around;
-  margin: 10px;
+  padding: 20px 10px;
 }
 
 a {
   color: seashell;
+}
+
+.main {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+}
+
+#mission {
+  background-image: url("../images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  padding-top: 70px;
+}
+
+#mission .content {
+  margin: auto;
+  background-color: black;
+  width: 100%;
+}
+
+#store {
+  width: 1000px;
+  display: flex;
+  padding-top: 70px;
+}
+
+#store .content {
+  margin: auto;
+  background-color: green;
+  width: 100%;
 }
