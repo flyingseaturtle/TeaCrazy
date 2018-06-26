@@ -3,9 +3,10 @@ body {
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
   text-align: center;
-  margin: 10px;
+  opacity: 0.9;
+  width:100%;
+  margin:0px;
 }
 
 header {
@@ -14,15 +15,14 @@ header {
   display: flex;
   position: fixed;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
   z-index: 1;
+  background-color: black;
+  align-items: center;
 }
 
 .logo {
   height: 50px;
   display: flex;
-  flex-wrap: wrap;
   padding-left: 10px;
 }
 
@@ -48,9 +48,36 @@ a {
   margin: auto;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#locations {
+  background-image: url("../images/img-locations-background.jpg");
+  height: 500px;
+  padding: 15px;
+}
+
+#locations .flex-container {
+  margin: auto;
+  flex-wrap: nowrap;
+}
+
+.location {
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+
+
 #mission {
   background-image: url("../images/img-mission-background.jpg");
-  background-repeat: no-repeat;
   height: 700px;
   display: flex;
   padding-top: 70px;
@@ -65,11 +92,33 @@ a {
 #store {
   width: 1000px;
   display: flex;
+  margin: auto;
   padding-top: 70px;
 }
 
 #store .content {
   margin: auto;
-  background-color: green;
+  background-color: black;
   width: 100%;
+}
+
+.item {
+  padding: 5px;
+}
+
+.item img {
+  height: 200px;
+  margin: 10px;
+}
+
+.item span {
+  display: block;
+  padding 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
