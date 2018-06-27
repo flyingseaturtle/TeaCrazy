@@ -54,10 +54,17 @@ a {
   flex-wrap: wrap;
 }
 
+.content {
+  width: 1000px;
+  padding-bottom: 20px;
+}
+
 #locations {
   background-image: url("../images/img-locations-background.jpg");
-  height: 500px;
+  background-repeat: no-repeat;
+  background-size: auto;
   padding: 15px;
+  width: 1200px;
 }
 
 #locations .flex-container {
